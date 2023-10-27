@@ -5,12 +5,15 @@ const Tasks = ({ tasks, onDelete, toggleReminder }) => {
  <>
  {tasks.map((task) => {
  return (
+    <div>
+        <p>Double click to add/remove reminder</p>
  <Task
  key={task.id}
  task={task}
  handleDelete={onDelete}
  toggleReminder={toggleReminder}
  />
+    </div>
  );
  })}
  </>
